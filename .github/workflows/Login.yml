@@ -33,3 +33,6 @@ jobs:
           set -e  
           xvfb-run --server-args="-screen 0 1280x1024x24" node login.js
 
+      - uses: gautamkrishnar/keepalive-workflow@v2
+        with:
+          use_api: false
